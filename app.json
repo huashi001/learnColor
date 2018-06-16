@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/toHex/toHex",
+    "pages/toRGB/toRGB"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "颜色码转换工具",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/toRGB/toRGB",
+        "text": "转RGB"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "对照表"
+      },
+      {
+        "pagePath": "pages/toHex/toHex",
+        "text": "转16进制"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<view class='wrap'>
+  <text class='header'>16进制转RGB</text>
+  <view class='group'>
+  <label for='inp1'>请输入:#</label>
+  <input value="{{originalColor}}" bindinput='change' maxlength='6' id='inp1'></input>
+  </view>
+  <text wx:if="{{isShow}}" class='error'>输入不合法，请重新输入!</text>
+  <button bindtap='convert'>转换</button>
+  <text>{{rgbColor}}</text>
+  <view class='show-color' style='background:rgb({{rgbColor}})'></view>
+</view>

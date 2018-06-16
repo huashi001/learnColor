@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view class='slider' scroll-y="true"  bindscroll="scroll">
+    <text class='text'>颜色码对照表</text>
+    <view class="table">
+      <view class="{{isFixed?'tr first-tr fixed':'tr first-tr'}}">
+        <view class="td color">颜色</view>
+        <view class="td">英文代码</view>
+        <view class="td">形象描述</view>
+        <view class="td">十六进制</view>
+        <view class="td">RGB</view>
+      </view>
+      <block wx:for="{{colorList}}">
+        <view class="tr">
+          <view style='background:{{item.hex}}' class="td color"></view>
+          <view class="td">{{item.engCode}}</view>
+          <view class="td">{{item.discription}}</view>
+          <view class="td">{{item.hex}}</view>
+          <view class="td">{{item.rgb}}</view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+
+
+</view>

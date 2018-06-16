@@ -1,0 +1,36 @@
+/* pages/toRGB/toRGB.wxss */
+.wrap{
+  text-align: center;
+}
+.header{
+  display: block;
+  margin: 40px 0 40px 0;
+  height: 3rem;
+  line-height: 3rem;
+  width: 100%;
+  background: #ccc;
+}
+.show-color{
+  margin: 10px auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+button{
+  background: #ccc;
+  border-radius: 10px;
+}
+.error{
+  color: red;
+}
+.group{
+  display: flex;
+  width: 40%;
+  height: 3rem;
+  line-height: 3rem;
+  margin: 20px auto;
+}
+input{
+  height: 3rem;
+  flex:1;
+}

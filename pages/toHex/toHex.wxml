@@ -1,0 +1,16 @@
+<!--pages/toHex/toHex.wxml-->
+<view class='wrap'>
+  <text class='header'>RGB进制转16进制</text>
+  <view class='group'>
+    <label>请输入: </label>
+    <input value="{{r}}" bindblur='changeR' type='num' maxlength='3'></input>
+    <text>,</text>
+    <input value="{{g}}" bindblur='changeG' maxlength='3'></input>
+    <text>,</text>
+    <input value="{{b}}" bindblur='changeB' maxlength='3'></input>
+  </view>
+  <text wx:if="{{isShow}}" class='error'>输入不合法，请重新输入!</text>
+  <button bindtap='convert'>转换</button>
+  <text>{{hexColor }}</text>
+  <view class='show-color' style='background:{{hexColor}}'></view>
+</view>
